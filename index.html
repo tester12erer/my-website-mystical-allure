@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DILMI ARIYAWANSA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .card-custom-border {
+            border-width: 14px; /* Increase border width */
+            border-color: #000000; /* Change border color to black */
+            border-style: solid; /* Ensure the border is solid */
+        }
+        .card-custom-padding {
+            padding: 1rem; /* Increase padding */
+        }
+        .card-title {
+            font-size: 1.5rem; /* Adjust font size */
+            font-weight: bold; /* Make font bold */
+            color: #000000; /* Change text color */
+            font-style: italic; /* Make font italic */
+        }
+        .card-description {
+            margin-top: 1rem; /* Add space above the paragraph */
+            font-size: 1rem; /* Adjust font size */
+            font-style: normal; /* Normal font style for description */
+        }
+        .black-card {
+            background-color: #000000; /* Set background color to black */
+            color: #ffffff; /* Set text color to white */
+            border-radius: 0; /* Remove border radius */
+            margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+            padding: 1rem; /* Add padding */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Center text horizontally */
+           
+        }
+        .black-card img {
+            border-radius: 0; /* Remove border radius from image */
+        }
+        .card-deck .card {
+            margin-bottom: 0; /* Remove bottom margin for cards in the same row */
+        }
+        .topic-heading {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            color: #ffffff; /* Set text color to white for visibility on black background */
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .underline {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, rgb(113, 192, 113), rgb(16, 184, 206)); /* Gradient from green to blue */
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .boxed-paragraph {
+            border: 1px solid white;
+            padding: 1rem;
+            background-color: rgb(0, 0, 0);
+            color: black;
+            margin-top: 1rem;
+            color: white;
+            font-size: 0.5rem;
+            text-align: left;
+            
+        }
+        @media (max-width: 576px) {
+            .card-deck {
+                margin-bottom: 1rem; /* Add bottom margin for responsiveness */
+            }
+        }
+        .card-img-top-custom {
+            width: 100%; /* Ensure the image takes the full width of the card */
+            height: 22.8rem; /* Set a fixed height for the image */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            border-radius: 0; /* Remove border-radius if needed */
+        }
+        .card-map {
+            background-color: #000000; /* Set background color to black */
+            color: #ffffff; /* Set text color to white */
+            border-radius: 0; /* Remove border radius */
+            margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+            padding: 1rem; /* Add padding */
+            display: flex;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+            text-align: center; /* Center text horizontally */
+            height: 22.8rem; /* Set fixed height for the card */
+            cursor: pointer; /* Change cursor to pointer for clickable effect */
+        }
+        .black-card h5 {
+            font-size: 2rem; /* Increase font size */
+            font-weight: bold; /* Make text bold */
+        }
+        .card-bodym {
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .card-ch {
+            border-radius: 0;
+            height: 20rem;
+        }
+        .nm {
+            border-radius: 0; /* Remove border radius from image */
+            background-color: #000000!important;
+        }
+        .card-map1 {
+            background-color: #000000; /* Set background color to black */
+            color: #ffffff; /* Set text color to white */
+            border-radius: 0; /* Remove border radius */
+            margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+            padding: 1rem; /* Add padding */
+            display: flex;
+        }
+        .card-map2 {
+            background-color: #ffffff; /* Set background color to black */
+            color: #000000; /* Set text color to white */
+            border-radius: 0; /* Remove border radius */
+            margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+            padding: 1rem; /* Add padding */
+            display: flex;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+            text-align: center; /* Center text horizontally */
+            height: 28.8rem; /* Set fixed height for the card */
+            border: none; /* Remove border from the card */
+        }
+        .card-map3 {
+            background-color: #ffffff; /* Set background color to black */
+            color: #000000; /* Set text color to white */
+            border-radius: 0; /* Remove border radius */
+            margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+            padding: 1rem; /* Add padding */
+            display: flex;
+            border: none; /* Remove border from the card */
+        }
+        .card-bodym2 {
+            font-size: 1rem;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        .v {
+            border-radius: 0;
+            background-color: #000000;     
+        }
+    </style>
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "GJJczOA52Sx4GBREB",
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Full-width container -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Carousel -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assests/11.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4"> <!-- Add margin-top for spacing -->
+            <div class="col">
+                <!-- Card with custom border color and width -->
+                <div class="card card-custom-border rounded-0 card-custom-padding">
+                    <div class="card-body text-center"> <!-- Center text within card -->
+                        <h2 class="card-title">"Beyond the Ordinary: Fashion That Transcends Worlds"</h2> <!-- Bold, colored, and italic title -->
+                        <p class="card-description">An otherworldly fashion collection, suggesting that the designs are extraordinary, imaginative, and transport the wearer to a realm beyond the familiar. It emphasizes the collection's uniqueness and its ability to create a sense of wonder and escape.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1"> <!-- Add margin-top for spacing -->
+            <div class="col-md-4">
+                <div class="card card-map2">
+                    <img src=
+                    "./assests/10.jpg"
+                    class="rounded-circle mt-4"
+                    alt="Circular Image" 
+                    width="200" height="200">
+                    <div class="card-bodym">
+                        <p>DILMI ARIYAWANSA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card card-map1">
+                    <br><br>
+                    <p class="card-text">
+                        I'm Dilmi Ariyawansa, a fashion designer driven by a deep passion for creating clothing that's
+                        transcends the ordinary and tells a story. My work is a blend of innovation, emotion, and artistry, reflecting my belief that fashion is more than just clothing it's a form of expression.<br><br>
+                        Through my designs, I strive to push boundaries and explore the uncharted territories of fashion, where creativity meets imagination. The design process is rooted in experimentation and the desire to create garments that not only look stunning but also evoke emotion and inspire.<br><br>
+                        Guided by a fascination with the unseen and the surreal, I craft garments that capture the essence of dreamscapes, where reality and fantasy intertwine. I believe that less is more and that true elegance lies in the details. My designs are an ode to the art of minimalism, where every element has a purpose.<br><br>
+                        My mission is to create fashion that not only adorns the body but also captivates the imagination and ignites the spirit.</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Carousel -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assests/12.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3"> <!-- Add margin-top for spacing -->
+            <div class="col-12 col-md-3 d-flex">
+                <div class="card black-card" style="width: 100%;">
+                    <div class="card-body">
+                        <div class="topic-heading">CONCEPT WRITE-UP!</div>
+                        <div class="underline"></div>
+                        <div class="boxed-paragraph">
+                            <p>
+                                "Ethereal Illumination" is a fashion collection that explores the delicate interplay between light, color, and texture, capturing the essence of otherworldly beauty and transcendence. Drawing inspiration from the surreal and vivid experiences of the psychedelic realm, this collection seeks to evoke a sense of wonder, mystique, and spiritual awakening
+                                The concept of illumination goes beyond mere visual aesthetics; it embodies the idea of enlightenment and the revelation of hidden dimensions within the human experience. Each garment in the collection is designed to reflect light in a way that creates a halo of ethereal radiance, enveloping the wearer in an aura of mysticism. Soft, flowing fabrics, combined with innovative materials such as reflective surfaces and sheer layers, create a sense of movement and fluidity, mimicking the dreamlike quality of light in a surreal landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex">
+                <div class="card black-card" style="width: 100%;">
+                    <div class="card-body">
+                        <div class="topic-heading">VISUAL INSPIRATION WRITE-UP</div>
+                        <div class="underline"></div>
+                        <div class="boxed-paragraph">
+                            <p>
+                                "Psychedelic Experience" is a fashion collection inspired by the vibrant, mind-altering visual and profound emotional depth of psychedelic states. This collection delves into the realms of altered perception, where reality bends, colors Intensify, and the ordinary becomes extracodinary. It aims to translate the essence of these transformative experiences into wearable art, offering a story journey through design.<br><br>
+                                The color palette is rich and saturated, featuring neon brights, iridescent tones, and deep, contrasting has that create a sense of movement and energy.<br><br>
+                                At the core of this collection is the exploration of consciousness and the breaking down of comntional boundaries. The garments are designed to evoke the swiding patterns, bold colors, and abstract shapes that character paychedelic Imagery. Through the use of dynamic prints, unexpected textures, and unconventional lhouettes, each place becomes a canvas that mirrors the fluidity and unpredictability of the psychedelic experience. "Psychedelic Experienced" is an investigation into the mind's capacity to rise above the mundane and experience realm of enhanced awareness and creativity, rather than merely a fashion line. Every article of clothing extends an invitation to the wear to embrace the unknown and we fashion as a way to express oneself while connecting with deeper aspects of human consciousness. This assortment honors the boundless opportunities that present themselves when we have the courage to view the world from an aberative penpective.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex">
+                <div class="" style="width: 100%;">
+                    <img src="./assests/4.jpg" class="card-img-top card-img-top-custom" alt="...">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row mt-1"> <!-- Add margin-top for spacing -->
+            <div class="col-md-4">
+                <div class="card card-map" onclick="window.location.href='https://drive.google.com/drive/u/0/shared-with-me';">
+                    <div class="card-bodym">
+                        <p>CONCEPT PITCH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-map" onclick="window.location.href='http://example.com';">
+                    <div class="card-bodym">
+                        <p>PORTFOLIO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-map" onclick="window.location.href='http://example.com';">
+                    <div class="card-bodym">
+                        <p>LOOKBOOK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/1.jpg" class="card-img-top card-ch" alt="Image 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/2.jpg" class="card-img-top card-ch" alt="Image 2">
+                       
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/3.jpg" class="card-img-top card-ch" alt="Image 3">
+                      
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/5.jpg" class="card-img-top card-ch" alt="Image 4">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1"> <!-- Add margin-top for spacing -->
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/6.jpg" class="card-img-top card-ch" alt="Image 5">
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/7.jpg" class="card-img-top card-ch" alt="Image 6">
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/8.jpg" class="card-img-top card-ch" alt="Image 7">
+                       
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-ch">
+                        <img src="./assests/9.jpg" class="card-img-top card-ch" alt="Image 8">
+                       
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="row mt-1"> <!-- Add margin-top for spacing -->
+                <div class="col-md-6">
+                    <div class="card card-map3">
+                        <div class="card-bodym">
+                            <p>Contact Us</p>
+                        </div>
+                        <p class="card-bodym2">+94 76 046 6423</p>
+                        <p class="card-bodym2">dilmiariyawansa99@gmail.com</p>
+                        <br>
+                        <p class="card-bodym2">Instagram :fenicotsl</p>
+                        <p class="card-bodym2">LinkedIn  :Dilmi Ariyawansa</p>
+                        <p class="card-bodym2">Behance   :behance.net/dilmiariyawansa</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-map3">
+                        <div class="card-bodym2">
+                            <form onsubmit="sendEmail(event)">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" placeholder="Leave a message here"></textarea>
+                                </div>
+                                <button type="submit" onclick="sendMail()" class="btn btn-dark v">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9DMBwDDHEnFUnPT3w4F0QyFjHAen9AoPPW4PrPckV7ZkK0kfvE1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-6W8ukex1W5KXfSZBR1F9fY3dP4JL1dq9H2bskJ5z5cM0h0qFzPtVJOmxSxR2d5M5" crossorigin="anonymous"></script>
+  
+</body>
+</html>
